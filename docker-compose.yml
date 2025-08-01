@@ -1,7 +1,7 @@
 version: "3.3"
 services:
   user-service:
-    image: shreshtaanugu/user-service:latest
+    build: .
     ports:
       - "3000:3000"
 
