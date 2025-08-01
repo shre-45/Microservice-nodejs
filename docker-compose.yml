@@ -5,7 +5,4 @@ services:
     ports:
       - "3000:3000"
 
-  order-service:
-    build: ./order-service
-    ports:
-      - "3001:3001"
+
