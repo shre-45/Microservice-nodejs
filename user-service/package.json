@@ -1,2 +1,13 @@
-cd user-service
-npm init -y   # generates package.json
+{
+  "name": "user-service",
+  "version": "1.0.0",
+  "description": "Handles user registration and login",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
+
