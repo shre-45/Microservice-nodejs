@@ -1,0 +1,2 @@
+cd user-service
+npm init -y   # generates package.json
