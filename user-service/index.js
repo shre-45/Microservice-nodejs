@@ -2,6 +2,9 @@ const express = require("express");
 const app = express();
 app.use(express.json());
 
+// Serve static HTML pages
+app.use(express.static("public"));
+
 const users = {};
 
 app.post("/register", (req, res) => {
@@ -17,5 +20,5 @@ app.post("/login", (req, res) => {
   res.json({ token: Math.random().toString(36).substring(2) });
 });
 
-app.listen(3000, '0.0.0.0', () => console.log("Order Service on 3000"));
+app.listen(3000, '0.0.0.0', () => console.log("User Service on 3000"));
 
