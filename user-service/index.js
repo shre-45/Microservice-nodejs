@@ -17,5 +17,5 @@ app.post("/login", (req, res) => {
   res.json({ token: Math.random().toString(36).substring(2) });
 });
 
-app.listen(3001, '0.0.0.0', () => console.log("Order Service on 3001"));
+app.listen(3000, '0.0.0.0', () => console.log("Order Service on 3000"));
 
