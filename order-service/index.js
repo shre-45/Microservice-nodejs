@@ -15,4 +15,4 @@ app.get("/orders/:username", (req, res) => {
   res.json(orders[req.params.username] || []);
 });
 
-app.listen(3001, () => console.log("Order Service on 3002"));
+app.listen(3002, () => console.log("Order Service on 3002"));
